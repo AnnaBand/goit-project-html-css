@@ -290,6 +290,6 @@ img {
 
     .social-media-svg:hover,
     .social-media-svg:focus {
-        fill: #FD9222;
+        fill: var(--ACCENT);
     }
 }
