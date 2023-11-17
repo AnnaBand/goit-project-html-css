@@ -1,5 +1,16 @@
 :root {
-    --modal-background-color: #FCFCFC;
+    --primary-brand-color: #4D5AE5;
+        --pressed-state-color: #404BBF;
+        --dark-color: #2E2F42;
+        --success-color: #31D0AA;
+        --text-color: #434455;
+        --subtle-text-color: #8E8F99;
+        --accent-color: #E7E9FC;
+        --light-color: #F4F4FD;
+        --modal-overlay-color: #2E2F4266;
+        --hero-background-color: #2E2F42B2;
+        --white-background-color: #FFFFFF;
+        --modal-background-color: #FCFCFC;
 }
 
 body {
@@ -46,6 +57,15 @@ body {
     letter-spacing: -0.42px;
     text-transform: uppercase;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: transparent;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------------------------------------------ */
