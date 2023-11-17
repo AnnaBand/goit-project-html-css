@@ -1,1 +1,1 @@
-https://krollew23.github.io/goit-markup-hw-07/
+https://krollew23.github.io/goit-project-html-css/
