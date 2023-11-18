@@ -255,6 +255,11 @@ img {
         display: none;
     }
 
+    .header-container {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+
     .logo {
         margin-right: 188px;
         font-size: 18px;
@@ -278,10 +283,6 @@ img {
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: -0.28px;
-    }
-
-    .social-media-container {
-        padding: 24px 0;
     }
 
     .social-media-links {
