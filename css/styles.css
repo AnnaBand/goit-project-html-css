@@ -348,27 +348,26 @@ is-hidden {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-.modal-header {
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    width: 298px;
-}
+    .modal-header {
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: -0.72px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        width: 298px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-.modal-header {
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    width: 298px;
+    .modal-header {
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: -0.72px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        width: 298px;
+    }
 }
-}
-/* ===done=== */
 
 .form-modal {
     display: flex;
@@ -377,18 +376,6 @@ is-hidden {
 
 .form-modal-details {
     margin-bottom: 14px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-.form-modal-details {
-    margin-bottom: 18px;
-}
-}
-
-@media screen and (min-width: 1200px) {
-.form-modal-details {
-    margin-bottom: 18px;
-}
 }
 
 .form-field {
@@ -427,24 +414,72 @@ is-hidden {
     margin-bottom: 18px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .form-modal-details {
+        margin-bottom: 18px;
+    }
+
+    .input-modal {
+        border-radius: 13px;
+        height: 66px;
+        padding-left: 24px;
+    }
+
+    .textarea {
+        border-radius: 13px;
+        height: 137px;
+        padding: 22px 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .form-modal-details {
+        margin-bottom: 18px;
+    }
+
+    .input-modal {
+        border-radius: 13px;
+        height: 66px;
+        padding-left: 24px;
+    }
+
+    .textarea {
+        border-radius: 13px;
+        height: 137px;
+        padding: 22px 24px;
+    }
+}
+
 .send-button {
-    min-width: 169px;
-    height: 56px;
-    border-radius: 4px;
+    cursor: pointer;
+    width: 93px;
+    height: 41px;
+    border-radius: 100px;
     border: none;
-    background-color: var(--primary-brand-color);
-    color: var(--white-background-color);
+    background-color: var(--ACCENT);
+    color: var(--WHITE);
     font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    display: block;
-    margin: 0 auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-button:hover,
 .send-button:focus {
-    background-color: var(--pressed-state-color);
+    background-color: var(--ACCENT-LIGH);
+    color: var(--ACCENT)
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .send-button {
+        width: 117px;
+        height: 45px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .send-button {
+        width: 117px;
+        height: 45px;
+    }
 }
