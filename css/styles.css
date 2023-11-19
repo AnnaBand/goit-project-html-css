@@ -46,6 +46,10 @@ img {
     display: block;
 }
 
+.accent {
+    color: var(--ACCENT);
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -175,6 +179,11 @@ img {
         height: 32px;
     }
 
+    .header-modal-button {
+        top: 24px;
+        right: 32px;
+    }
+
     .header-social-media-container-mobile {
         margin-left: 32px;
         margin-bottom: 24px;
@@ -245,4 +254,197 @@ img {
     .header-social-media-svg:focus {
         fill: var(--ACCENT);
     }
+}
+
+/* -------------modal------------- */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* ===max h?,shadow chwilowo=== */
+.modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--LIGHT-BKG);
+    width: 311px;
+    height: 471px;
+    padding: 32px 24px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .modal-box {
+        width: 517px;
+        height: 628px;
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-box {
+        width: 517px;
+        height: 628px;
+        padding: 40px;
+    }
+}
+
+.modal-button {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .modal-button {
+        top: 24px;
+        right: 24px;
+    }
+
+    .svg-button {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-button {
+        top: 24px;
+        right: 24px;
+    }
+    
+    .svg-button {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* ===jak przerzucic about=== */
+.modal-header {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    width: 255px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.modal-header {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    width: 298px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.modal-header {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    width: 298px;
+}
+}
+/* ===done=== */
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-modal-details {
+    margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.form-modal-details {
+    margin-bottom: 18px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.form-modal-details {
+    margin-bottom: 18px;
+}
+}
+
+.form-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-modal {
+    border-radius: 8px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    outline: transparent;
+    padding-left: 18px;
+}
+
+.input-modal::placeholder,
+.textarea::placeholder {
+    color: rgba(64, 64, 64, 0.30);
+}
+
+.textarea {
+    resize: none;
+    border-radius: 8px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    width: 100%;
+    height: 91px;
+    background-color: transparent;
+    outline: transparent;
+    padding: 14px 18px;
+}
+
+.form-modal-textarea {
+    margin-bottom: 18px;
+}
+
+.send-button {
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primary-brand-color);
+    color: var(--white-background-color);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-button:hover,
+.send-button:focus {
+    background-color: var(--pressed-state-color);
 }
