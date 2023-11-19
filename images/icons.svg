@@ -16,7 +16,7 @@
     <symbol id="icon-hamburger" viewBox="0 0 20 20">
       <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
     </symbol>
-    <symbol id="flag" viewBox="0 0 41 32">
+    <symbol id="flag-ua" viewBox="0 0 41 32">
       <path fill="gold" d="M40.745 1.355H.311v30.09h40.434V1.355z" style="fill:var(--color1, #ffd700)"/>
       <path fill="#0057b7" d="M.311 1.355h40.434V16.4H.311V1.355z" style="fill:var(--color2, #0057b7)"/>
     </symbol>
