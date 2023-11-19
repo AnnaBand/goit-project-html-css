@@ -272,7 +272,7 @@ is-hidden {
     opacity: 0;
 }
 
-/* ===max h?,shadow chwilowo=== */
+/* ===h???,shadow chwilowo=== */
 .modal-box {
     position: absolute;
     top: 50%;
@@ -290,7 +290,7 @@ is-hidden {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .modal-box {
         width: 517px;
-        height: 628px;
+        height: 100%;
         padding: 40px;
     }
 }
@@ -298,7 +298,8 @@ is-hidden {
 @media screen and (min-width: 1200px) {
     .modal-box {
         width: 517px;
-        height: 628px;
+        /* height: 628px; */
+        height: 100%;
         padding: 40px;
     }
 }
@@ -378,12 +379,6 @@ is-hidden {
     margin-bottom: 14px;
 }
 
-.form-field {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
 .input-modal {
     border-radius: 8px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -423,12 +418,16 @@ is-hidden {
         border-radius: 13px;
         height: 66px;
         padding-left: 24px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
     }
 
     .textarea {
         border-radius: 13px;
         height: 137px;
         padding: 22px 24px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
     }
 }
 
@@ -441,12 +440,16 @@ is-hidden {
         border-radius: 13px;
         height: 66px;
         padding-left: 24px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
     }
 
     .textarea {
         border-radius: 13px;
         height: 137px;
         padding: 22px 24px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
     }
 }
 
@@ -481,5 +484,59 @@ is-hidden {
     .send-button {
         width: 117px;
         height: 45px;
+    }
+}
+
+/* ====zamykanie buttona send???====== */
+
+.form-field {
+    position: relative;
+}
+
+.flag {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    font-weight: 500;
+}
+
+.input-phone {
+    padding-left: 106px;
+    position: relative;
+}
+
+.input-phone::before {
+    position: absolute;
+    content: '';
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .flag {
+        left: 24px;
+        gap: 18px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+    }
+
+    .input-phone {
+        padding-left: 177px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .flag {
+        left: 24px;
+        gap: 18px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+    }
+
+    .input-phone {
+        padding-left: 177px;
     }
 }
