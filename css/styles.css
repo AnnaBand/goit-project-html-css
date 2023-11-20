@@ -285,7 +285,7 @@ img {
     opacity: 0;
 }
 
-/* ===h???,shadow chwilowo=== */
+/* ===h???=== */
 .modal-box {
     position: absolute;
     top: 50%;
@@ -296,7 +296,7 @@ img {
     height: 471px;
     padding: 32px 24px;
     border-radius: 15px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -500,8 +500,6 @@ img {
     }
 }
 
-/* ====zamykanie buttona x & send???====== */
-
 .form-field {
     position: relative;
 }
@@ -516,22 +514,12 @@ img {
     gap: 8px;
     color: #000;
     font-weight: 500;
+    width: 74px;
+    border-right: 1.5px solid rgba(64, 64, 64, 0.3);
 }
 
 .input-phone {
     padding-left: 106px;
-    position: relative;
-}
-
-/* ============before====================== */
-.input-phone::before {
-        position: absolute;
-            content: '';
-            width: 100%;
-            height: 14px;
-            border-radius: 2px;
-            background-color: var(--ACCENT);
-            left: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -540,6 +528,8 @@ img {
         gap: 18px;
         font-size: 18px;
         letter-spacing: -0.36px;
+        width: 125px;
+        border-right: 2.5px solid rgba(64, 64, 64, 0.3);
     }
 
     .input-phone {
@@ -558,6 +548,8 @@ img {
         gap: 18px;
         font-size: 18px;
         letter-spacing: -0.36px;
+        width: 125px;
+        border-right: 2.5px solid rgba(64, 64, 64, 0.3);
     }
 
     .input-phone {
@@ -568,4 +560,13 @@ img {
         width: 32px;
         height: 24px;
     }
+}
+
+.svg-button {
+    stroke: var(--DARK);
+}
+
+.svg-button:hover,
+.svg-button:focus {
+    stroke: var(--ACCENT);
 }
