@@ -73,6 +73,10 @@ img {
     text-transform: uppercase;
 }
 
+.header-logo-span {
+    font-style: normal;
+}
+
 /* =============mobile menu============= */
 
 .header-modal-button {
