@@ -1,1 +1,1 @@
-https://krollew23.github.io/goit-project-html-css/
+https://AnnaBand.github.io/goit-project-html-css/
